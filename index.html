@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<body>
+    <div id="my_camera" style="width:320px; height:240px;"></div>
+    
+    <div id="my_result"></div>
+    
+    <div id="response">Hey! Pick how you feel today.</div>
+    
+    <div class="card-holder" id="all-cards">
+        <div class="card" id="card-1">
+            <a href="#card-2" class="card-face">
+              <div class="front">
+                <img src="/images/sad.jpg" onclick='cardClicked("sad")' alt="Sad">
+              </div>
+              <div class="back">
+                <img src="/images/back.gif" class="background" alt="" />
+              </div>
+            </a>
+        </div>
+        <div class="card" id="card-2">
+          <a href="#card-1" class="card-face" onclick='cardClicked("happy")' alt="Happy">
+            <div class="front">
+              <img src="/images/happy.jpg">
+            </div>
+            <div class="back">
+              <img src="/images/back.gif" class="background" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="card" id="card-3">
+          <a href="#card-3" class="card-face">
+          <div class="front">
+             <img src="/images/worried.jpg" onclick='cardClicked("worried")' alt="Worried">
+          </div>
+          <div class="back">
+            <img src="/images/back.gif" class="background" alt="" />
+          </div>
+          </a>
+        </div>
+        <div class="card" id="card-4">
+          <a href="#card-4" class="card-face">
+          <div class="front">
+            <img src="/images/angry.jpg" onclick='cardClicked("angry")' alt="Angry">
+          </div>
+          <div class="back">
+            <img src="/images/back.gif" class="background" alt="" />
+          </div>
+        </a>
+     </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script src="index.js"></script>
+<script src="webcam.js"></script>
+
+</body>
+</html>
